@@ -1,0 +1,28 @@
+* {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    vertical-align: top;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html {
+  --font-size: 20px;
+  --color-font: #333ff0;
+  --color-primary: #acdfff;
+  --color-primary-light: #bacbf7;
+  --color-primary-dark: #566a91;
+  --color-primary-darker: #1d3c4e;
+}

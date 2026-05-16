@@ -1,0 +1,12 @@
+[
+    {
+        "types": "SetCharacter",
+        "character": "HoshinoTakanashi",
+        "position": [1, 0, 0]
+    },
+    {
+        "types": "Dialogue",
+        "text": "This is a test dialogue.",
+        "character": "HoshinoTakanashi"
+    }
+]
