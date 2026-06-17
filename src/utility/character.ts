@@ -2,6 +2,7 @@ import { invoke } from "@tauri-apps/api/core";
 
 export interface Character {
     name:string;
+    nameCN?:string;
     college?:string;
     club?:Array<string> | string;
     position?:Array<string> | string;

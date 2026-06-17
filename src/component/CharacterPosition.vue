@@ -43,7 +43,7 @@ const getDynamicScale = (z: number): number => {
     // 扩展到10级的计算公式：保持原z=1-3不变，z=4-10按比例递增
     let baseScale: number;
     if (z <= 3) {
-        baseScale = 0.6 + (z * 0.15); // 与原比例保持一致
+        baseScale = 0.35 + (z * 0.15); // 与原比例保持一致
     } else {
         // z=4-10：从1.20开始，每级增加0.10
         baseScale = 1.05 + ((z - 3) * 0.10);
@@ -95,7 +95,7 @@ const checkBoundary = (character: RenderedCharacter) => {
     
     // 使用屏幕尺寸作为边界判断
     const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    // const screenHeight = window.innerHeight;
     
     if (leftBoundary < 0) {
         overflowInfo.push(`X轴左边界超出: ${Math.abs(leftBoundary).toFixed(2)}px`);
@@ -110,17 +110,17 @@ const checkBoundary = (character: RenderedCharacter) => {
         overflowInfo.push(`Y轴下边界超出: ${bottomBoundary.toFixed(2)}px`);
     }
     
-    if (overflowInfo.length > 0) {
-        console.warn(`[CharacterPosition] ${character.name} 超出边界:`);
-        overflowInfo.forEach(info => console.warn(`  - ${info}`));
-        console.warn(`  当前位置: [${x}, ${y}, ${z}]`);
-        console.warn(`  屏幕尺寸: ${screenWidth}x${screenHeight}`);
-        console.warn(`  屏幕比例系数: ${screenScaleFactor.toFixed(4)}`);
-        console.warn(`  图片尺寸(缩放后): ${actualImageWidth.toFixed(0)}x${actualImageHeight.toFixed(0)}`);
-        console.warn(`  原始图片尺寸: ${character.imageWidth || 0}x${character.imageHeight || 0}`);
-        console.warn(`  transform-origin: bottom left`);
-        console.warn(`  元素定位: left:0, bottom:0`);
-    }
+    // if (overflowInfo.length > 0) {
+    //     console.warn(`[CharacterPosition] ${character.name} 超出边界:`);
+    //     overflowInfo.forEach(info => console.warn(`  - ${info}`));
+    //     console.warn(`  当前位置: [${x}, ${y}, ${z}]`);
+    //     console.warn(`  屏幕尺寸: ${screenWidth}x${screenHeight}`);
+    //     console.warn(`  屏幕比例系数: ${screenScaleFactor.toFixed(4)}`);
+    //     console.warn(`  图片尺寸(缩放后): ${actualImageWidth.toFixed(0)}x${actualImageHeight.toFixed(0)}`);
+    //     console.warn(`  原始图片尺寸: ${character.imageWidth || 0}x${character.imageHeight || 0}`);
+    //     console.warn(`  transform-origin: bottom left`);
+    //     console.warn(`  元素定位: left:0, bottom:0`);
+    // }
 };
 
 const renderCharacter = async (

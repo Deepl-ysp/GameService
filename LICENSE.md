@@ -1,0 +1,77 @@
+
+---
+
+# 仅供学习使用协议 / Non-Commercial & No-Redistribution License
+
+**版本 1.0 / Version 1.0**  
+**生效日期：2026年5月17日 / Effective Date: May 17, 2026**
+
+---
+
+## 1. 授权范围 / Grant of License
+
+本协议授予任何获取本软件及其相关文档（统称“本作品”）的个人或实体一项有限的、不可转让的、非排他性的许可，**仅可用于个人学习、研究或教学目的**。
+
+This license grants any person or entity obtaining a copy of this software and associated documentation files (the "Work") a limited, non-transferable, non-exclusive license **solely for personal learning, research, or educational purposes**.
+
+---
+
+## 2. 禁止行为 / Prohibited Conduct
+
+除非获得作者明确的书面许可，否则**严禁**以下行为：
+
+Without the express written permission of the author, the following actions are **strictly prohibited**:
+
+### 2.1 商业使用 / Commercial Use
+
+不得将本作品或其任何衍生作品用于任何商业目的，包括但不限于：
+
+- 销售、出租、租赁、许可或作为服务提供；
+- 集成到向用户收费的产品或系统中；
+- 用于企业内部培训、生产或盈利性项目。
+
+You may not use the Work or any derivative thereof for any commercial purpose, including but not limited to:
+
+- Selling, renting, leasing, licensing, or providing it as a service;
+- Incorporating it into any product or system that charges users;
+- Using it for internal training, production, or for‑profit projects within an organization.
+
+### 2.2 传播与再分发 / Distribution & Redistribution
+
+不得以任何形式（包括但不限于复制、修改后分发、上传至公共网络、通过邮件或即时通讯工具转发）将本作品的全部或部分提供给任何第三方。
+
+You may not provide all or part of the Work to any third party in any form, including but not limited to copying, distributing modified versions, uploading to public networks, or forwarding via email or instant messaging tools.
+
+### 2.3 修改与公开发布 / Modification & Public Release
+
+不得修改本作品后以自己名义公开，不得删除原作者的版权声明。
+
+You may not modify the Work and publicly release it under your own name, nor remove the original copyright notice.
+
+---
+
+## 3. 版权与责任 / Copyright & Disclaimer
+
+- 本作品版权归原作者所有。本许可不授予任何商标或标识的使用权。
+- 本作品按“原样”提供，不作任何明示或默示的担保。作者不对因使用本作品造成的任何损失承担责任。
+
+- The copyright of the Work belongs to the original author. This license does not grant any rights to use any trademarks or logos.
+- THE WORK IS PROVIDED "AS IS", WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED. THE AUTHOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF THE WORK.
+
+---
+
+## 4. 协议终止 / Termination
+
+若违反上述任何条款，本授权自动终止。终止后，你必须立即销毁本作品的所有副本。
+
+This license terminates automatically upon any violation of the above terms. Upon termination, you must immediately destroy all copies of the Work.
+
+---
+
+## 5. 其他 / Miscellaneous
+
+本协议解释以中文为准。如有未尽事宜，作者保留最终解释权。
+
+The interpretation of this license shall be governed by the Chinese version. The author reserves the right of final explanation for any matters not explicitly covered.
+
+---

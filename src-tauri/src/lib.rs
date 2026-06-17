@@ -13,7 +13,6 @@ use std::sync::Mutex;
 use std::thread;
 use std::sync::mpsc::{self, Sender};
 
-// 音频控制命令
 pub enum AudioCommand {
     // BGM
     PlayBgm(String),

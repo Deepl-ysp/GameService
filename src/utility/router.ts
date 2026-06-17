@@ -54,11 +54,21 @@ export function useGoToRouter() {
     return router.forward()
   }
 
+  /**
+   * 重载当前页面
+   * 等价于浏览器的重新加载操作，会重新请求页面资源并重新渲染整个应用
+   * 内部通过 router.go(0) 实现，与 window.location.reload() 行为一致
+   */
+  function reload(): void {
+    router.go(0)
+  }
+
   return {
-    goToRouter,   // 主函数
-    push,         // 别名，等价于 goToRouter(to)
-    replace,      // 直接替换
+    goToRouter,
+    push,
+    replace,
     back,
-    forward
+    forward,
+    reload
   }
 }

@@ -20,13 +20,20 @@ onMounted(async () => {
     const shouldBeFullscreen = settings.value.WindowSettings.isFullscreen;
     const appWindow = getCurrentWindow();
     const currentFullscreen = await appWindow.isFullscreen();
+    
     if (currentFullscreen !== shouldBeFullscreen) {
       await appWindow.setFullscreen(shouldBeFullscreen);
     }
     isCurrentWindow.value = await appWindow.isFullscreen();
     initSettings(settings.value);
+    changeFull(shouldBeFullscreen);
   }
 });
+
+const emit = defineEmits(['FullScreen']);
+const changeFull = (is: boolean) => {
+  emit('FullScreen', is);
+};
 
 async function quitApp(): Promise<void> {
   try {
@@ -39,8 +46,12 @@ async function quitApp(): Promise<void> {
   }
 }
 
+/**
+ * @description 切换全屏
+ */
 async function changeFullscreen() {
   isCurrentWindow.value = !isCurrentWindow.value;
+  changeFull(isCurrentWindow.value);
   if (settings.value) {
     settings.value.WindowSettings.isFullscreen = isCurrentWindow.value;
     await setSettings(settings.value);
